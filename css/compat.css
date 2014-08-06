@@ -1,0 +1,374 @@
+/* Jason Thomas Chew*/
+/*ID: 4304373*/
+* {font-family: "Times New Roman", sans-serif;}
+
+p, h2 {color: white;}
+
+a:link{
+    text-decoration: none;
+    color: #feaa00;
+}
+
+a:visited{
+    text-decoration: none;
+    color: #feaa00;
+}
+
+a:active{
+    text-decoration: none;
+}
+
+a:hover{
+    color: #FF0000;
+}
+
+li {
+    color: #fefefe;
+    list-style-type: square;
+}
+
+h2 {font-size: 20px;}
+
+p, a {font-size: 18px;}
+
+p{ 
+	position:relative;
+	text-align:justify;
+	padding-left:8%;
+	padding-right:8%;
+}
+
+
+body{
+	background-color: #5c416e;
+	margin: 0 auto; 
+    width: 100%;
+	height:100%;
+    position: relative; 
+}
+
+.bcg {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 100%;
+	width: 100%;
+}
+#about_1 { 
+	height: 50%;  
+}
+
+#about_2 { 
+	height: 50%;  
+}
+
+#about_3 { 
+	height: 50%;  
+}
+
+/*activities.html*/
+#activities_1 { 
+	height: 50%;  
+}
+
+#activities_2 { 
+	height: 50%;  
+}
+
+#activities_3 { 
+	height: 50%;  
+}
+
+/*map.html*/
+#map_1 { 
+	height: 50%;  
+}
+
+/*history.html*/
+#history_1 { 
+	height: 50%;  
+}
+
+#history_2{ 
+	height: 50%;  
+}
+
+/*contact.html*/
+#contact_1 { 
+	height: 50%;  
+}
+
+/*feedback.html*/
+#feedback_1 { 
+	height: 50%;  
+}
+
+
+/*about.html*/
+#profile_1{ 
+	height: 50%;  
+}
+
+#profile_2{ 
+	height: 50%;  
+}
+
+#profile_3{ 
+	height: 50%;  
+}
+
+.pictures{
+	margin: 10px;
+    float: left;
+    text-align: center;
+}
+
+.picturesB{
+	display: inline;
+    margin: 5px;
+    border: 1px solid #ffffff;
+}
+
+/*photographs.html*/
+#photo_1 { 
+	height: 50%;  
+}
+
+/*history.html*/
+#history_1 { 
+	height: 50%;  
+}
+
+#history_2{ 
+	height: 50%;  
+}
+
+/*gallery.html*/
+#gallery_1 { 
+	height: 50%;  
+}
+
+#gallery_2 { 
+	height: 100%;  
+}
+
+#imgNext {
+    height: 50%;  
+}
+
+#imgPrev {
+    height: 50%;  
+}
+
+/*home.html*/
+#home_1 { 
+	height: 50%;  
+}
+
+#home_2 { 
+	height: 50%;  
+}
+
+#home_3 { 
+	height: 50%;  
+}
+#imgNext {
+    color: #661a9c;
+}
+
+#imgPrev {
+    color: #661a9c;
+}
+
+.header-container {
+    background-color: #000;
+    width: 100%;
+}
+
+.header-container li {
+    display: inline-block;
+    position: relative;
+}
+
+.header-list {
+    list-style-type: none;
+    margin: 0px;
+    padding: 1px 2px;
+}
+
+.header-list li {
+    position: relative;
+    padding-left: 20px;
+}
+
+#heading {
+    width: 25%;
+    display: inline-block;
+    font-size: 24px;
+    text-align: center;
+	visibility:hidden;
+}
+
+#header-submenu {
+    list-style-type: none;
+    margin: 0px;
+    padding: 1px 2px;
+}
+
+#header-submenu li{
+    color: #ffaaae;
+	font-size: 24px;
+    list-style-type: none;
+    display: inline-block;
+}
+#gallery-link{
+	background:#000;
+	text-align:center;
+}
+
+.hsContainer {
+	width: 94%;
+	height: 90%;
+	overflow: hidden;
+	position: relative;
+	margin-left:auto;
+	margin-right:auto;
+	
+}
+.hsContent h2,p{
+	background-color:#000;
+}
+.hsContent li {
+	list-style-type: none;
+	text-align:center;
+}
+.lsContainer{
+	width: 94%;
+	height: 90%;
+	overflow: hidden;
+	position: relative;
+	margin-left:auto;
+	margin-right:auto;
+}
+.rsContainer{
+	width: 94%;
+	height: 90%;
+	overflow: hidden;
+	position: relative;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+/*Gallery List*/
+.mini-gallery {
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.mini-gallery li {
+    width: 250px;
+    height: 250px;
+    display: inline;
+}
+
+.mini-gallery-item {
+    width: 20%;
+    height: 20%;
+}
+
+.inContainer{
+	width: 100%;
+	height: 90%;
+	overflow: hidden;
+	position: relative;
+}
+
+.lsContent  {
+	background:#000;
+	text-align:center;
+}
+
+.rsContent {
+	background:#000;
+	text-align:center;
+}
+.rsContent li{
+	list-style-type: none
+}
+.inContent{
+	background:#000;
+	text-align:center;
+}
+.mini-gallery {
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.mini-gallery li {
+	margin: 5px;
+    padding: 5px;
+    float:left;
+    text-align: center;
+
+}
+.mini-gallery img{
+	border:5px solid black;
+	height:300px;
+    width:500px;
+}
+.gContainer {
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	height:500px;
+}
+
+.gContent {
+	height:50px;
+    width: 100%;
+	position: relative;
+	background-color:#000;
+}
+
+.gContent p {
+	height:20px;
+	display:inline;
+	padding: 5px 100px;
+}
+
+.footer-container {
+    width: 100%;
+    width: 100%;
+    text-align: center;
+}
+.round-button { 
+    display: inline-block;
+    margin: 5px 1px;
+    width: 50px;
+    height: 50px;
+    background: #757575;
+    overflow: hidden;
+}
+.round-button img {
+    display: block;
+    width: 0px;
+    padding: 86px;
+    height: 0px;
+}
+
+#content li {
+    color: #fefefe;
+    list-style-type: circle;
+}
+
+#feedback_1 {
+	color:white;
+}
+
+
+
