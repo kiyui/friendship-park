@@ -1,0 +1,17 @@
+#Check current status:
+git status
+
+#Switch branch:
+git checkout $branch
+
+#Commit
+git add -A
+git commit -m $message
+git push origin master
+
+#Rebase
+#Commit your current changes, then switch to master
+git checkout master
+git pull origin master
+git checkout $branch
+git rebase master

@@ -1,0 +1,2 @@
+#!/bin/bash
+for page in *.php; do echo "Renaming $page" && mv $page ${page/php/html}; done
