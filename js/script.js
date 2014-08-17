@@ -4,6 +4,49 @@
 var detectCSS = 0;
 var clientType = 0;
 
+//Page navigation bar hover
+function menuHover(menuImg) {
+    menuImg.src = "./images/menu_hover.png";
+}
+
+function menuOut(menuImg) {
+    menuImg.src = "./images/menu.png";
+}
+
+//Show floating back to top
+$(document).ready(function () {
+    $(window).scroll(function(){
+        //Window value & sizes
+        var scrollh = parseInt($(window).scrollTop());
+        var doch = parseInt($(document).height());
+        var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+        var showV = scrollh/h;
+        //Toggles visibility of back to top Icon
+        if (showV > 0 && doch - scrollh - h > 150){
+            document.getElementById("toTop").style.visibility = "visible";
+        }
+        else {
+            document.getElementById("toTop").style.visibility = "hidden";
+        }
+    });
+});
+
+//Show the floating navigation menu
+function navMenu() {
+    
+    if (document.getElementById("menu").style.visibility == "visible")
+    {
+        document.getElementById("menu").style.visibility = "hidden";
+    }
+    else {
+        document.getElementById("menu").style.visibility = "visible"
+    }
+}
+
+function navMenuExit() {
+    
+}
+
 //Resizes the .background size to emulate CSS3 property VH
 function setVH() {
     //Taken from http://stackoverflow.com/questions/1248081/get-the-browser-viewport-dimensions-with-javascript
@@ -66,6 +109,8 @@ function padStr (myStr, myVal) {
     myStr = myStr.toString();
     return myStr.length < 3 ? padStr("0" + myStr, 3) : myStr;
 }
+
+//Gallery specific
 var imageArray = [];
 for (var i = 0; i < 35; i++) imageArray[i] = "./images/" + padStr(i + 1, 3) + ".jpg";
 
@@ -97,6 +142,6 @@ function prevImg() {
     setBackground();
 }
 
+//General events
 window.onresize = applyStyle;
 document.onresize = applyStyle;
-

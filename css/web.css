@@ -5,7 +5,6 @@
 * {
     font-family: 'Ubuntu', sans-serif;
     color: #f8f8f8;
-    background-color: inherit;
 }
 
 a:link{
@@ -188,10 +187,6 @@ body{
 }
 
 #home_2 { 
-	background: url(../images/028.jpg) no-repeat center center fixed;
-}
-
-#home_3 { 
 	background: url(../images/021.jpg) no-repeat center center fixed;
 }
 
@@ -370,56 +365,45 @@ body{
     color: #f8f8f8;
 }
 
-.header-class {
-	background-repeat: repeat;
-    width: 100%;
+#menu_button {
+    position: absolute;
+    display: inline-block;
+    right: 0px;
+    padding: 15px;
+    z-index: 1000;
 }
 
-.header-class p {
-    font-size: 18px;
-}
-
-.header-class li {
-    font-size: 18px;
-    display: inline;
-    position: relative;
+#menu_button * {
+    display: inline-block;
 }
 
 #menu {
-    list-style-type: none;
-    margin: 0px;
-    padding: 1px 2px;
+    position: fixed;
+    width: 30%;
+    height: 40%;
+    left: 35%;
+    top: 30%;   
+    background: url(../images/opacity.png);
+	background-repeat: repeat;
+	overflow: auto;
+    visibility: hidden;
+    z-index: 1000;
+    margin: 0;
 }
 
-#menu li {
-    position: relative;
-    padding-left: 5px;
+#menu_X {
+    position: absolute;
+    top: 10px;
+    right: 15px;
 }
 
 #heading {
     width: 40%;
     display: inline-block;
-    font-size: 24px;
+    font-size: 20px;
     text-align: center;
     background-color: inherit;
     color: #fff;
-}
-
-#header-style {
-    background-color: inherit;
-    color: #fff;
-}
-
-#header-submenu {
-    list-style-type: none;
-    margin: 0px;
-    padding: 1px 2px;
-    display: inline-block;
-}
-
-#header-submenu li{
-    list-style-type: none;
-    display: inline-block;
 }
 
 #content {
@@ -446,4 +430,15 @@ body{
     color: #fff;
     width: 100%;
     text-align: center;
+}
+
+#toTop {
+    position: fixed;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    visibility: hidden;
+    z-index: 1000;
 }

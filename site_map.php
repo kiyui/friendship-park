@@ -6,7 +6,7 @@
     <meta http-equiv="content-type" content="text/html;charset=utf-8" />
     <meta name="description" content="One of Kuching's most popular attraction, Friendship Park is a fun place to exercise, relax and participate in various activities! Learn more now!" />
     <meta name="keywords" content="friendship park,friendship,park,kuching,activities,fun,sports,exercise,hangout,malaysia,china,chinese,beautiful,attraction" />
-    <meta name="author" content="Brian Sim" />
+    <meta name="author" content="Timur Lavrenti Kiyivinski" />
     <!-- JS Code -->
     <script src="js/mdetect.js" type="text/javascript"></script>
     <script src="js/script.js" type="text/javascript"></script>
@@ -40,20 +40,20 @@
             <div class="rsContainer">
                 <div class="rsContent">
                 <ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About</a></li>
+					<li><a href="index.php">Home</a></li>
+					<li><a href="about.php">About</a></li>
 					<li>
-					<a href="gallery.html">Gallery</a>
+					<a href="gallery.php">Gallery</a>
 					<ul>
-					<li><a href="photographs.html">Our Photographer</a></li>
+					<li><a href="photographs.php">Our Photographer</a></li>
 					</ul>
 					</li>
-					<li><a href="states.html">The Malaysian States</a></li>
-					<li><a href="activities.html">Activities</a></li>
-					<li><a href="about_our_group.html">About Us</a></li>
-					<li><a href="contact.html">Contact Us</a></li>
-					<li><a href="map.html">Map</a></li>
-                    <li><a href="feedback_form.html">Reviews</a></li>
+					<li><a href="states.php">The Malaysian States</a></li>
+					<li><a href="activities.php">Activities</a></li>
+					<li><a href="about_our_group.php">About Us</a></li>
+					<li><a href="contact.php">Contact Us</a></li>
+					<li><a href="map.php">Map</a></li>
+                    <li><a href="feedback_form.php">Reviews</a></li>
 				</ul>
                 </div>
             </div>
