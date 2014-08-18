@@ -9,11 +9,12 @@
     <meta name="author" content="Timur Lavrenti Kiyivinski" />
     <!-- JS Code -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/script.js" type="text/javascript"></script>
+    <script src="js/script1.js" type="text/javascript"></script>
     <!-- CSS Code -->
     <link rel="stylesheet" id="pagestyle" href="./css/style3.css" title="Desktop Style"/>
     <link rel="alternate stylesheet" href="./css/style2.css" title="Mobile Style"/>
     <link rel="alternate stylesheet" href="./css/style1.css" title="Compatible &#47; Acessible Style"/>
+    <link rel="stylesheet" href="./css/print.css" type="text/css" media="print" />
     <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'/>
 </head>
 <body onload="applyStyle()">
@@ -33,13 +34,17 @@
 				<div id="contactTable" >
 				<table>
 				    <tr>
-				        <td rowspan="2" ><p>Contact information:</p></td>
+				        <td rowspan="3" ><p>Contact information:</p></td>
 				        <td><p>Phone:</p></td>
 				        <td><p>012-3456789</p></td>
 				    </tr>
 				    <tr>
 				        <td><p>Fax:</p></td>
 				        <td><p>082-333444</p></td>
+				    </tr>
+				    <tr>
+				        <td><p>Mail:</p></td>
+				        <td><a href="mailto:contact@friendshippark.com" >contact@friendshippark.com</a></td>
 				    </tr>
 				    <tr>
 				        <td><p>Address:</p></td>

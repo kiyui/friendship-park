@@ -1,3 +1,4 @@
+<!-- Timothy Kiyui, 4316886 -->
 <div id="toTop" ><a href="#header" title="Back to top">Back to top</a></div>
 <div id="menu" >
 <a id="menu_X" href="#" onclick="navMenu()" >X</a>

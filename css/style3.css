@@ -92,7 +92,7 @@ body{
 #contactTable table,tr,td {
     border-collapse: collapse;    
     border: 1px solid #fff;
-    
+    text-align: center;
 }
 
 /*feedback.html*/
@@ -108,8 +108,11 @@ body{
 
 #form {
     background: url(../images/opacity.png);
-    background-color: inherit;
-    color: #ffffff;
+}
+
+#form * {
+    color: #fff;
+    background-color: #000;
 }
 
 /*about_our_group.html*/

@@ -9,11 +9,12 @@
     <meta name="author" content="Timur Lavrenti Kiyivinski" />
     <!-- JS Code -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/script.js" type="text/javascript"></script>
+    <script src="js/script1.js" type="text/javascript"></script>
     <!-- CSS Code -->
     <link rel="stylesheet" id="pagestyle" href="./css/style3.css" title="Desktop Style"/>
     <link rel="alternate stylesheet" href="./css/style2.css" title="Mobile Style"/>
     <link rel="alternate stylesheet" href="./css/style1.css" title="Compatible &#47; Acessible Style"/>
+    <link rel="stylesheet" href="./css/print.css" type="text/css" media="print" />
     <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'/>
 </head>
 <body onload="applyStyle()">
@@ -41,11 +42,11 @@
                         <input type="text" name="email" size="50" />
                         <br />                   
                     </fieldset>
-                   <fieldset>
+                    <fieldset>
                         <label>Country</label>
                         <br />
                         <select name="country">
-                        <option value="">Country...</option>
+                        <option value="NULL">Country...</option>
                         <option value="Afganistan">Afghanistan</option>
                         <option value="Albania">Albania</option>
                         <option value="Algeria">Algeria</option>
@@ -295,7 +296,7 @@
                         <option value="Zimbabwe">Zimbabwe</option>
                         </select>
                         <br />                   
-                    </fieldset>
+                   </fieldset>
                    <fieldset>
                         <label>Gender</label> 
                         <br />

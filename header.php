@@ -1,3 +1,5 @@
+<!-- Timothy Kiyui, 4316886 -->
+<!-- Sets page name -->
 <?php
 function pageName() {
  $pg = substr($_SERVER["SCRIPT_NAME"],strrpos($_SERVER["SCRIPT_NAME"],"/")+1);

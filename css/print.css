@@ -1,133 +1,35 @@
-/* Jason Thomas Chew*/
-/*ID: 4304373*/
-* {font-family: "Times New Roman", sans-serif;}
+/* Author: Brian Sim
+ * ID: 4316878
+ * */
 
-p, h2 {color: black;}
+/* General fonts */
+* {font-family: 'Ubuntu', sans-serif;}
 
-a:link{
+p, h2 {color: #000;}
+
+/* Links */
+a:visited,a:active{
     text-decoration: none;
-    color: blue;
+    color: #781351;
 }
 
-a:visited{
-    text-decoration: none;
-    color: darkblue;
-}
-
-a:active{
-    text-decoration: none;
-}
-
-a:hover{
-    color: #FF0000;
-}
-
-li {
-    color: #fefefe;
-    list-style-type: square;
-	padding-bottom:1%;
-}
-
-h2 {
-	font-size: 20px;
-	padding-top:1%;
-	padding-bottom:1%;
-}
-
-p, a {font-size: 18px;}
-
-p{ 
-	position:relative;
-	text-align:justify;
-	padding-top:1%;
-	padding-left:8%;
-	padding-right:8%;
-	padding-bottom:1%;
-}
-
-
+/* Remove body margin */
 body{
-	background-color: #FFF;
 	margin: 0 auto; 
     width: 100%;
 	height:100%;
     position: relative; 
 }
 
+/* Body size */
 .bcg {
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
 	height: 100%;
 	width: 100%;
-}
-#about_1 { 
-	height: 50%;  
-}
-
-#about_2 { 
-	height: 50%;  
-}
-
-#about_3 { 
-	height: 50%;  
-}
-
-/*activities.html*/
-#activities_1 { 
-	height: 50%;  
-}
-
-#activities_2 { 
-	height: 50%;  
-}
-
-#activities_3 { 
-	height: 50%;  
-}
-
-/*map.html*/
-#map_1 { 
-	height: 50%;  
-}
-
-/*history.html*/
-#history_1 { 
-	height: 50%;  
-}
-
-#history_2{ 
-	height: 50%;  
-}
-
-/*contact.html*/
-#contact_1 { 
-	height: 50%;  
-}
-
-/*feedback.html*/
-#feedback_1 { 
-	height: 50%;  
-}
-
-
-/*about.html*/
-#profile_1{ 
-	height: 50%;  
-}
-
-#profile_2{ 
-	height: 50%;  
-}
-
-#profile_3{ 
-	height: 50%;  
 }
 
 .pictures{
 	margin: 10px;
     float: left;
-    text-align: center;
 }
 
 .picturesB{
@@ -136,49 +38,6 @@ body{
     border: 1px solid #ffffff;
 }
 
-/*photographs.html*/
-#photo_1 { 
-	height: 50%;  
-}
-
-/*history.html*/
-#history_1 { 
-	height: 50%;  
-}
-
-#history_2{ 
-	height: 50%;  
-}
-
-/*gallery.html*/
-#gallery_1 { 
-	height: 50%;  
-}
-
-#gallery_2 { 
-	height: 100%;  
-}
-
-#imgNext {
-    height: 50%;  
-}
-
-#imgPrev {
-    height: 50%;  
-}
-
-/*home.html*/
-#home_1 { 
-	height: 50%;  
-}
-
-#home_2 { 
-	height: 50%;  
-}
-
-#home_3 { 
-	height: 50%;  
-}
 #imgNext {
     color: #661a9c;
 }
@@ -187,115 +46,96 @@ body{
     color: #661a9c;
 }
 
-.header-container {
-    background-color: lightgray;
-    width: 100%;
+#header{
+    display: none;
 }
 
-.header-container li {
-    display: inline-block;
-    position: relative;
+#menu {
+    display: none;
 }
 
-.header-list {
-    list-style-type: none;
-    margin: 0px;
-    padding: 1px 2px;
+#content h2 {font-size: 20px;}
+
+#content p, a {
+    font-size: 18px;
+    color: #000;
 }
 
-.header-list li {
-    position: relative;
-    padding-left: 20px;
-}
-
-#heading {
-    width: 25%;
-    display: inline-block;
-    font-size: 24px;
-    text-align: center;
-	visibility:hidden;
-}
-
-#header-submenu {
-    list-style-type: none;
-    margin: 0px;
-    padding: 1px 2px;
-}
-
-#header-submenu li{
-    color: #ffaaae;
-	font-size: 24px;
-    list-style-type: none;
-    display: inline-block;
-}
-#gallery-link{
-	background:#FFF;
-	text-align:center;
+#content li {
+    color: #000;
+	list-style-type:none;
 }
 
 .hsContainer {
-	width: 94%;
-	height: 90%;
-	overflow: hidden;
-	position: relative;
-	margin-left:auto;
-	margin-right:auto;
-	
-}
-.hsContent h2,p{
-	background-color: #FFF;
-}
-.hsContent li {
-	list-style-type: none;
-	text-align:center;
-}
-.lsContainer{
-	width: 94%;
-	height: 90%;
-	overflow: hidden;
-	position: relative;
-	margin-left:auto;
-	margin-right:auto;
-}
-.rsContainer{
-	width: 94%;
-	height: 90%;
-	overflow: hidden;
-	position: relative;
-	margin-left:auto;
-	margin-right:auto;
+	width: 100%; 
+	margin: 0; 
+	float: none;
 }
 
-.inContainer{
-	width: 100%;
-	height: 90%;
-	overflow: hidden;
-	position: relative;
+.hsContent h2,p{
+	color: #000;
+}
+
+.hsContent li {
+	list-style-type: none;
+}
+#contactTable table {
+    width: 100%;
+}
+
+#contactTable table,tr,td {  
+    border: 5px solid #000;
+}
+
+.lsContainer{
+    width: 100%; 
+	margin: 0; 
+	float: none;
 }
 
 .lsContent  {
-	background: #FFF;
-	text-align:center;
+	width: 100%; 
+	margin: 0; 
+	float: none;
+}
+
+.lsContent li{
+     color: #781351; 
+}
+
+.rsContainer{
+    width: 100%; 
+	margin: 0; 
+	float: none;
+}
+
+.inContainer{
+    width: 100%; 
+	margin: 0; 
+	float: none;
 }
 
 .rsContent {
-	background: #FFF;
-	text-align:center;
-}
-.rsContent li{
-	list-style-type: none
-}
-.inContent{
-	background: #FFF;
-	text-align:center;
-}
-.mini-gallery {
-    margin: 0;
-    padding: 0;
-    white-space: nowrap;
-    overflow: hidden;
+	width: 100%; 
+	margin: 0; 
+	float: none;
 }
 
+.rsContent ul{
+	list-style-type: none;
+}
+
+.rsContent li{
+    color: #000;   
+}
+
+.inContent{
+	width: 100%; 
+	margin: 0; 
+	float: none;
+}
+
+/*Gallery List*/
 .mini-gallery {
     margin: 0;
     padding: 0;
@@ -304,21 +144,19 @@ body{
 }
 
 .mini-gallery li {
-	margin: 5px;
-    padding: 5px;
-    text-align: center;
-	display:block;
+    width: 300px;
+    height: 300px;
+    display: inline;
 }
-.mini-gallery img{
-	border:5px solid black;
-	height:300px;
-    width:500px;
+
+.mini-gallery-item {
+    width: 20%;
+    height: 20%;
 }
 
 .gContainer {
 	overflow: hidden;
 	position: relative;
-	text-align: center;
 	height:500px;
 }
 
@@ -326,7 +164,6 @@ body{
 	height:50px;
     width: 100%;
 	position: relative;
-	background-color:#000;
 }
 
 .gContent p {
@@ -335,34 +172,22 @@ body{
 	padding: 5px 100px;
 }
 
-.footer-container {
-    width: 100%;
-    width: 100%;
-    text-align: center;
-}
-.round-button { 
-    display: inline-block;
-    margin: 5px 1px;
-    width: 50px;
-    height: 50px;
-    background: #757575;
-    overflow: hidden;
-}
-.round-button img {
-    display: block;
-    width: 0px;
-    padding: 86px;
-    height: 0px;
+#footer{
+    display: none;
 }
 
-#content li {
-    color: black;
-    list-style-type: circle;
+.button-link{
+    display: none;   
+    
 }
 
-#feedback_1 {
-	color:white;
+.background {
+	max-height: 100%;
+	margin: 0 auto; 
+    width: 100%; 
+    position: relative;
 }
 
-
-
+#toTop {
+    display: none;
+}

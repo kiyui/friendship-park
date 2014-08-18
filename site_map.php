@@ -9,7 +9,7 @@
     <meta name="author" content="Timur Lavrenti Kiyivinski" />
     <!-- JS Code -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/script.js" type="text/javascript"></script>
+    <script src="js/script1.js" type="text/javascript"></script>
     <!-- CSS Code -->
     <link rel="stylesheet" id="pagestyle" href="./css/style3.css" title="Desktop Style"/>
     <link rel="alternate stylesheet" href="./css/style2.css" title="Mobile Style"/>
@@ -39,7 +39,7 @@
 					<li><a href="about_our_group.php">About Us</a></li>
 					<li><a href="contact.php">Contact Us</a></li>
 					<li><a href="map.php">Getting There</a></li>
-                    <li><a href="feedback_form.php">Reviews</a></li>
+                    <li><a href="feedback_form.php">Feedback</a></li>
 				</ul>
                 </div>
             </div>

@@ -9,12 +9,12 @@
     <meta name="author" content="Timur Lavrenti Kiyivinski" />
     <!-- JS Code -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/script.js" type="text/javascript"></script>
+    <script src="js/script1.js" type="text/javascript"></script>
     <!-- CSS Code -->
     <link rel="stylesheet" id="pagestyle" href="./css/style3.css" title="Desktop Style"/>
     <link rel="alternate stylesheet" href="./css/style2.css" title="Mobile Style"/>
     <link rel="alternate stylesheet" href="./css/style1.css" title="Compatible &#47; Acessible Style"/>
-    <link rel="stylesheet" href="print.css" type="text/css" media="print" />
+    <link rel="stylesheet" href="./css/print.css" type="text/css" media="print" />
     <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'/>
 </head>
 <body onload="applyStyle()">
@@ -45,7 +45,7 @@
     <div id="home_2" class="background">
         <div class="bcg">
             <div class="hsContainer">
-                <div class="hsContent" onclick="window.open('./gallery.html', '_self')">
+                <div class="hsContent" onclick="window.open('./gallery.php', '_self')">
                     <ul class="mini-gallery">
                         <li><img src="./images/019.jpg" alt="Image failed to load." class="mini-gallery-item" /></li>
                         <li><img src="./images/007.jpg" alt="Image failed to load." class="mini-gallery-item" /></li>
@@ -54,7 +54,7 @@
                         <li><img src="./images/006.jpg" alt="Image failed to load." class="mini-gallery-item" /></li>
                     </ul>
                     <h2 id="gallery-link">Gallery</h2>
-                    <p>Want more awesome pictures? Check out the rest <a href="gallery.html">here</a>.</p>
+                    <p>Want more awesome pictures? Check out the rest <a href="gallery.php">here</a>.</p>
                 </div>
             </div>
         </div>

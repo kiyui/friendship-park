@@ -9,11 +9,12 @@
     <meta name="author" content="Timur Lavrenti Kiyivinski" />
     <!-- JS Code -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/script.js" type="text/javascript"></script>
+    <script src="js/script1.js" type="text/javascript"></script>
     <!-- CSS Code -->
     <link rel="stylesheet" id="pagestyle" href="./css/style3.css" title="Desktop Style"/>
     <link rel="alternate stylesheet" href="./css/style2.css" title="Mobile Style"/>
     <link rel="alternate stylesheet" href="./css/style1.css" title="Compatible &#47; Acessible Style"/>
+    <link rel="stylesheet" href="./css/print.css" type="text/css" media="print" />
     <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'/>
 </head>
 <body onload="applyStyle()">
@@ -31,7 +32,16 @@
 					<li>ID: 4316886</li>
 					<li>Email: <a href="mailto:4316886@students.swinburne.edu.my" >4316886@students.swinburne.edu.my</a></li>
 					<li>Hobbies: Programming and GNU/Linux.</li>
-					<li>Authored the web style.</li>
+					<li>
+					Authored the Desktop Style, along with the following pages:
+					<ul>
+					   <li>The Home Page</li>
+					   <li>Gallery</li>
+					   <li>Our Photographer</li>
+					   <li>Getting There</li>
+					   <li>Site Map</li>
+					</ul>
+					</li>
 				</ul>
                 </div>
             </div>
@@ -48,7 +58,14 @@
 					<li>ID: 4304373</li>
 					<li>Email: <a href="mailto:4304373@students.swinburne.edu.my" >4304373@students.swinburne.edu.my</a></li>
 					<li>Hobbies: Programming and martial arts.</li>
-					<li>Authored the compatible style.</li>
+					<li>
+					Authored the Compatible Style, along with the following pages:
+					<ul>
+					   <li>Contact Us</li>
+					   <li>Activities</li>
+					   <li>The Malaysian States</li>
+					</ul>
+					</li>
 				</ul>
                 </div>
             </div>
@@ -65,7 +82,14 @@
 					<li>ID: 4316878</li>
 					<li>Email: <a href="mailto:4316878@students.swinburne.edu.my" >4316878@students.swinburne.edu.my</a></li>
 					<li>Hobbies: Playing frisbee</li>
-					<li>Authored the mobile style.</li>
+					<li>
+					Authored the Mobile Style, along with the following pages:
+					<ul>
+					   <li>About</li>
+					   <li>Feedback</li>
+					   <li>About Us</li>
+					</ul>
+					</li>
 				</ul>
                 </div>
              </div>
