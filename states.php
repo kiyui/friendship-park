@@ -9,7 +9,6 @@
 	<meta name="author" content="Timur Lavrenti Kiyivinski" />
 	<!-- JS Code -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script src="js/mdetect.js" type="text/javascript"></script>
 	<script src="js/script.js" type="text/javascript"></script>
 	<!-- CSS Code -->
 	<link rel="stylesheet" id="pagestyle" href="./css/style3.css" title="Desktop Style"/>
@@ -22,8 +21,35 @@
 	<?php include("header.php");?>
     <?php include("menu.php");?>
     <div id="content">
-	<!-- Section #1 -->
-    <div class="states_1 background">
+	<div class="states_2 background">
+    	<div class="bcg">
+    		<div class="rsContainer">
+    			<div class="rsContent">
+				<!-- Your content here -->
+				<h2>States:</h2>
+				<ul>
+    				<li><a href="#state_melaka" >Melaka</a></li>
+    				<li><a href="#state_n9" >Negeri Sembilan</a></li>
+    				<li><a href="#state_selangor" >Selangor</a></li>
+    				<li><a href="#state_perak" >Perak</a></li>
+    				<li><a href="#state_pinang" >Pulau Pinang</a></li>
+    				<li><a href="#state_kedah" >Kedah</a></li>
+    				<li><a href="#state_perlis" >Perlis</a></li>
+    				<li><a href="#state_kelantan" >Kelantan</a></li>
+    				<li><a href="#state_terengganu" >Terengganu</a></li>
+    				<li><a href="#state_pahang" >Pahang</a></li>
+    				<li><a href="#state_johor" >Johor</a></li>
+    				<li><a href="#state_sabah" >Sabah</a></li>
+                    <li><a href="#state_sarawak" >Sarawak</a></li>
+                    <li><a href="#state_kl" >Kuala Lumpur (Wilayah Persekutuan)</a></li>
+                    <li><a href="#state_putrajaya" >Putrajaya (Wilayah Persekutuan)</a></li>
+                    <li><a href="#state_labuan" >Labuan (Wilayah Persekutuan)</a></li>
+				</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="states_1 background" id="state_melaka">
     	<div class="bcg">
     		<div class="lsContainer">
     			<div class="lsContent">
@@ -39,8 +65,7 @@
 			</div>
 		</div>
 	</div>
-	<!-- Section #2 -->
-	<div class="states_2 background">
+	<div class="states_2 background" id="state_n9" >
 		<div class="bcg">
 			<div class="rsContainer">
 				<div class="rsContent">
@@ -55,8 +80,7 @@
 			</div>
 		</div>
 	</div>
-	<!-- Section #3 -->
-	<div class="states_1 background">
+	<div class="states_1 background" id="state_selangor">
 		<div class="bcg">
 			<div class="lsContainer">
 				<div class="lsContent">
@@ -70,7 +94,7 @@
 			</div>
 		</div>
 	</div>
-    <div class="states_2 background">
+    <div class="states_2 background" id="state_perak">
         <div class="bcg">
             <div class="rsContainer">
                 <div class="rsContent">
@@ -86,7 +110,7 @@
             </div>
         </div>
     </div>
-    <div class="states_1 background">
+    <div class="states_1 background" id="state_pinang">
         <div class="bcg">
             <div class="lsContainer">
                 <div class="lsContent">
@@ -100,7 +124,7 @@
             </div>
         </div>
     </div>
-    <div class="states_2 background">
+    <div class="states_2 background" id="state_kedah">
         <div class="bcg">
             <div class="rsContainer">
                 <div class="rsContent">
@@ -115,7 +139,7 @@
             </div>
         </div>
     </div>
-    <div class="states_1 background">
+    <div class="states_1 background" id="state_perlis">
         <div class="bcg">
             <div class="lsContainer">
                 <div class="lsContent">
@@ -130,7 +154,7 @@
             </div>
         </div>
     </div>
-    <div class="states_2 background">
+    <div class="states_2 background" id="state_kelantan">
         <div class="bcg">
             <div class="rsContainer">
                 <div class="rsContent">
@@ -145,7 +169,7 @@
             </div>
         </div>
     </div>
-    <div class="states_1 background">
+    <div class="states_1 background" id="state_terengganu">
         <div class="bcg">
             <div class="lsContainer">
                 <div class="lsContent">
@@ -160,7 +184,7 @@
             </div>
         </div>
     </div>
-    <div class="states_2 background">
+    <div class="states_2 background" id="state_pahang">
         <div class="bcg">
             <div class="rsContainer">
                 <div class="rsContent">
@@ -175,7 +199,7 @@
             </div>
         </div>
     </div>
-    <div class="states_1 background">
+    <div class="states_1 background" id="state_johor">
         <div class="bcg">
             <div class="lsContainer">
                 <div class="lsContent">
@@ -189,7 +213,7 @@
             </div>
         </div>
     </div>
-    <div class="states_2 background">
+    <div class="states_2 background" id="state_sabah">
         <div class="bcg">
             <div class="rsContainer">
                 <div class="rsContent">
@@ -205,7 +229,7 @@
             </div>
         </div>
     </div>
-    <div class="states_1 background">
+    <div class="states_1 background" id="state_sarawak">
         <div class="bcg">
             <div class="lsContainer">
                 <div class="lsContent">
@@ -220,7 +244,7 @@
             </div>
         </div>
     </div>
-    <div class="states_2 background">
+    <div class="states_2 background" id="state_kl">
         <div class="bcg">
             <div class="rsContainer">
                 <div class="rsContent">
@@ -235,7 +259,7 @@
             </div>
         </div>
     </div>
-    <div class="states_1 background">
+    <div class="states_1 background" id="state_putrajaya">
         <div class="bcg">
             <div class="lsContainer">
                 <div class="lsContent">
@@ -246,7 +270,7 @@
             </div>
         </div>
     </div>
-    <div class="states_2 background">
+    <div class="states_2 background" id="state_labuan">
         <div class="bcg">
             <div class="rsContainer">
                 <div class="rsContent">

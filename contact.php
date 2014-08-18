@@ -9,7 +9,6 @@
     <meta name="author" content="Timur Lavrenti Kiyivinski" />
     <!-- JS Code -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/mdetect.js" type="text/javascript"></script>
     <script src="js/script.js" type="text/javascript"></script>
     <!-- CSS Code -->
     <link rel="stylesheet" id="pagestyle" href="./css/style3.css" title="Desktop Style"/>

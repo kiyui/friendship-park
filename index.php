@@ -32,10 +32,11 @@
                     diplomatic relations. The park is popular for those who wish to jog in an open and safe area as well as for those who
                     want to attend Yoga or Tai Chi sessions. With wishing wells, a foot reflexology walk, a history walk as well as a restaurant
                     built in the center of the park, Friendship Park is a great place to visit!
-                    </p>
-                    <p>
+                    <br />
+                    <a href="#" onclick="navMenu()" >
                     Navigate the site by pressing the menu icon on the top right of the page.
-                    </p>
+                    </a>
+                    </p>                    
                 </div>
             </div>
         </div>
