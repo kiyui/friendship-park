@@ -1,9 +1,6 @@
 //Author: Timothy Kiyui
 //ID: 4316886
 
-var detectCSS = 0;
-var clientType = 0;
-
 //Page navigation bar hover
 function menuHover(menuImg) {
     menuImg.src = "./images/menu_hover.png";
@@ -13,7 +10,7 @@ function menuOut(menuImg) {
     menuImg.src = "./images/menu.png";
 }
 
-//Show floating back to top
+//Show floating back to top text
 $(document).ready(function () {
     $(window).scroll(function(){
         //Window value & sizes
@@ -22,7 +19,7 @@ $(document).ready(function () {
         var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
         var showV = scrollh/h;
         //Toggles visibility of back to top Icon
-        if (showV > 0 && doch - scrollh - h > 150){
+        if (showV > 0 && doch - scrollh - h > 180){
             document.getElementById("toTop").style.visibility = "visible";
         }
         else {
@@ -43,10 +40,6 @@ function navMenu() {
     }
 }
 
-function navMenuExit() {
-    
-}
-
 //Resizes the .background size to emulate CSS3 property VH
 function setVH() {
     //Taken from http://stackoverflow.com/questions/1248081/get-the-browser-viewport-dimensions-with-javascript
@@ -55,67 +48,83 @@ function setVH() {
     
     for (var i = 0; i < backgroundArray.length; i++)
     {
-        if (clientType == 2) {
-            backgroundArray[i].style.height = h + 'px';
-            backgroundArray[i].style.minHeight = h + 'px';
-        }
-        else {
-            backgroundArray[i].style.height = '';
-            backgroundArray[i].style.minHeight = '';
-        }
+        backgroundArray[i].style.height = h + 'px';
+        backgroundArray[i].style.minHeight = h + 'px';
     }
 }
 
-//Sets the page CSS
-function setCSS(sheet){
-    if (sheet == './css/web.css') {
-        clientType = 2;
+//region: PAGECSS
+//Sets page CSS Cookie
+function mkCookie (CName, CVal, CLife, CURL)
+{
+    var CStr = CURL ? ("; domain=" + CURL) : '' ;
+    var CDate = new Date();
+    CDate.setTime(CDate.getTime() + 60 * 60 * 24 * CLife);
+    document.cookie = CName + "=" + encodeURIComponent( CVal ) + "; expires=" + CDate.toGMTString() + "; path=/" + CStr ;
+}
+
+//Gets page CSS Cookie
+function gtCookie (CName)
+{
+    var CStr = document.cookie;
+    if (CStr.length != 0) {
+        var CVal = CStr;
+        return decodeURIComponent (CVal[6]) ;
     }
-    else if (sheet == './css/mobile.css') {
-        clientType = 1;
+    return 'NULL';
+}
+
+//Sets a page CSS
+function setCSS(sheet){
+    var pgStyle;
+    if (sheet == './css/style1.css') {
+        pgStyle = 0;
+    }
+    else if (sheet == './css/style2.css') {
+        pgStyle = 1;
     }
     else {
-        clientType = 0;    
+        pgStyle = 2;
+        setVH();
     }
-    setVH();
+    mkCookie('Style', pgStyle, 30, '127.0.0.1');
     document.getElementById('pagestyle').setAttribute('href', sheet);
 }
 
-//Detect and set the appropriate CSS file
+//Detect and set the appropriate CSS file on page load
 function applyStyle() {
-    if (detectCSS === 0){
-        //Use MobileESP to redirect and set the proper CSS file
-        //TODO: Save this option as a cookie.
-        if (MobileEsp.InitDeviceScan())
-        {
-            setCSS('./css/mobile.css');
-            clientType = 1;
-        }
-        else
-        {
-            setCSS('./css/web.css');
-            clientType = 2;
-            setVH();
-            
-        }
-        detectCSS++;
+    var SStyle = gtCookie('Style');
+    console.log(SStyle);
+    if (SStyle == "0"){
+        setCSS('./css/style1.css');
+        console.log("STYLE0");
     }
-    if (clientType == 2){
+    else if (SStyle == "1")
+    {
+        setCSS('./css/style2.css');
+        console.log("STYLE1");
+    }
+    else {
+        setCSS('./css/style3.css');
+        console.log("STYLE3");
         setVH();
     }
 }
+//endregion
 
+//region: Gallery
+//Fixes gallery name
 function padStr (myStr, myVal) {
     myStr = myStr.toString();
     return myStr.length < 3 ? padStr("0" + myStr, 3) : myStr;
 }
 
-//Gallery specific
+//Gallery item array
 var imageArray = [];
 for (var i = 0; i < 35; i++) imageArray[i] = "./images/" + padStr(i + 1, 3) + ".jpg";
-
 var bgCount = 0;
 
+//Makes sure the images loop
 function checkCount() {
     if (bgCount > 35){
         bgCount = 0;
@@ -125,22 +134,26 @@ function checkCount() {
     }
 }
 
+//Sets gallery page background
 function setBackground() {
     checkCount();
     document.getElementById("gallery_2").style.background = "url(" + imageArray[bgCount] + ") no-repeat center center fixed";
     document.getElementById("viewImage").setAttribute("href", imageArray[bgCount]);
 }
 
+//Next gallery image
 function nextImg() {
     bgCount++;
     setBackground();
     
 }
 
+//Previous gallery image
 function prevImg() {
     bgCount--;
     setBackground();
 }
+//endregion
 
 //General events
 window.onresize = applyStyle;
