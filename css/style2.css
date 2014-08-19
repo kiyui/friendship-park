@@ -262,6 +262,11 @@ body{
     z-index: 1000;
 }
 
+#form {
+    background: url(../images/opacity.png);
+}
 
-
-
+#form * {
+    color: #fff;
+    background-color: #000;
+}
