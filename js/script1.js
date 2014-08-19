@@ -60,11 +60,13 @@ function setVH() {
         var SStyle = gtCookie('Style');
         if (SStyle == 2){
             backgroundArray[i].style.height = h + 'px';
-            backgroundArray[i].style.minHeight = h + 'px';
+            backgroundArray[i].style.maxHeight = h + 'px';
+            console.log(h);
         }
         else {
             backgroundArray[i].style.height = '100%';
-            backgroundArray[i].style.minHeight = 0 + '100%';
+            backgroundArray[i].style.maxHeight = '100%';
+            console.log('100%');
         }
     }
 }
